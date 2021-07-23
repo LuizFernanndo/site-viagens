@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    font-family: 'monsterrat', sans-serif;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background: #1d61dd;
+    color: white;
+}
+
+header {
+    height: calc(100vh - 50px);
+    background: no-repeat center/cover url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+header nav p {
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+.header-content {
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+    color: rgb(204, 222, 226);
+    text-shadow: 1px 1px 15px #000000;
+}
+
+.header-content h1 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+
+.pacote {
+    background: rgb(161, 159, 157);
+    padding: 15px;
+}
+
+.pacote .pacote-card {
+    display: flex;
+    max-width: 950px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pacote .pacote-title {
+    width: 100%;
+    margin: 25px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.pacote .card {
+    width: 250px;
+    height: 350px;
+    background: rgb(241, 224, 205);
+    border-radius: 24px 0px;
+    margin: 25px 25px;
+    position: relative;
+}
+
+.pacote .card-image {
+    width: 250px;
+    height: 205px;
+    border-radius: 24px 0 0 0;
+    object-fit: cover;
+}
+
+.pacote .card-content {
+    padding: 0 30px;
+}
+
+.pacote .card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.pacote .card-content ul li {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin: 3.5px 0;
+    color: rgb(97, 50, 50);
+    font-weight: bold;
+}
+
+.pacote .card-content ul svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+}
+
+.pacote .card-content h1 {
+    font-size: 1.2rem;
+    margin-top: 1px;
+}
+
+.pacote .card .card-tag-top {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background: rgb(80, 119, 65);
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+.pacote .card .card-tag-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 165px;
+    background: #1d61dd;
+    border-radius: 0 8px 8px 0;
+    padding: 5px 10px;
+}
+
+.pacote .card .card-tag p {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
+}
+
+.servicos {
+    padding: 15px;
+}
+
+.servicos .servicos-title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.servicos .servicos-cards {
+    padding: 15px 0;
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.servicos .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.servicos .card svg {
+    width: 60px;
+    height: 60px;
+    margin: 50px;
+    transition: all 1s;
+}
+
+.servicos .card svg:hover {
+    stroke: #1d61dd;
+    transform: scale(1.1);
+}
+
+.servicos .card h3 {
+    font-weight: bold;
+}
+
+.servicos .card p {
+    color: gray;
+    font-size: .9rem;
+    text-align: center;
+}
+
+.servicos .card .card-content {
+    height: 180px;
+    text-align: center;
+}
+
+.servicos button {
+    background: #1d61dd;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.contato {
+    padding: 50px 50px;
+    background: #e1e8f7;
+    position: relative;
+}
+
+.contato .contato-card {
+    width: 350px;
+    height: 300px;
+    background: white;
+    border-radius: 12px;
+    position: absolute;
+    z-index: 99;
+    top: calc(50% - 150px);
+    left: calc(20% - 175px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.contato .contato-card h1 {
+    padding-left: 50px;
+    text-align: left;
+}
+
+.contato .contato-card li {
+    font-size: .8rem;
+    font-weight: bold;
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+
+.contato .contato-card svg {
+    width: 16px;
+    margin: 10px;
+}
+
+
+/* RESPONDIVIDADE */
+
+
+/* Especial para o mapa */
+
+@media (max-width: 950px) {
+    .contato {
+        padding: 60px 0;
+    }
+    .contato .contato-card {
+        left: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contato {
+        padding: 60px 1;
+    }
+    .contato .contato-card {
+        position: static;
+        margin: 40px auto;
+    }
+}
+
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {}
+
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+    body {
+        margin-bottom: 55px;
+    }
+    header nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background: #533207;
+        height: 55px;
+        z-index: 99;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* Portrait tablet to landscape and desktop 
+@media (min-width: 768px) and (max-width: 979px)
+{
+
+} */
+
+
+/* Large desktop 
+@media (min-width: 1200px)
+{
+
+} */
